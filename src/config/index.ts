@@ -20,6 +20,10 @@ export const NAVIGATION = [
     {
         title: "Sobre mí",
         href: "/sobre-mi"
+    }, 
+    {
+        title: "Contacto",
+        href: "/contacto"
     }
 ]
 

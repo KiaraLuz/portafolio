@@ -1,4 +1,3 @@
-import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import "./globals.css";
 
@@ -9,10 +8,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="mx-auto w-full max-w-screen-xl bg-background px-6 text-foreground md:px-20">
+      <body className="dark mx-auto">
         <Navbar />
-        {children}
-        <Footer />
+        <div className="min-h-screen w-full bg-zinc-900 px-6 md:px-20">
+          {children}
+        </div>
       </body>
     </html>
   );

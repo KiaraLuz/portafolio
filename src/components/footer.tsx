@@ -20,7 +20,6 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-        <p className="pt-8">© {getYear()} </p>
       </div>
     </footer>
   );
