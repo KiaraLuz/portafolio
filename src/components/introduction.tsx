@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Introduction() {
   return (
-    <div className="flex max-h-screen flex-col items-center justify-between pt-28 sm:flex-row">
+    <div className="flex max-h-screen flex-col items-center justify-between pt-10 sm:flex-row">
       <div className="mb-8 flex flex-col justify-center gap-4 p-0 sm:m-0 sm:py-8 sm:pr-8">
         <h1 className="text-4xl font-bold sm:text-5xl">Hola, soy Kiara</h1>
         <p className="mt-4 text-base sm:text-lg lg:text-xl">

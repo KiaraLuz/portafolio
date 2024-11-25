@@ -12,8 +12,10 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div className="pb-10 md:pb-20">
-      <h2 className="mb-8 text-4xl font-bold">Proyectos</h2>
+    <section className="flex flex-col gap-4">
+      <h2 id="proyectos" className="text-4xl font-bold">
+        Proyectos
+      </h2>
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
         {PROJECTS.map((project) => (
           <Card className="group h-full" key={project.title}>
@@ -22,7 +24,7 @@ export default function Projects() {
                 <div className="overflow-hidden rounded-lg">
                   <Image
                     alt="Image"
-                    className="transition-all group-hover:scale-105"
+                    className="z-0 transition-all group-hover:scale-105"
                     width={1280}
                     height={832}
                     quality={100}
@@ -38,7 +40,11 @@ export default function Projects() {
                     {project.title}
                   </Link>
                   {project.github && (
-                    <Link href={project.github} target="_blank">
+                    <Link
+                      href={project.github}
+                      target="_blank"
+                      aria-label="link-github"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="1em"
@@ -67,6 +73,6 @@ export default function Projects() {
           </Card>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

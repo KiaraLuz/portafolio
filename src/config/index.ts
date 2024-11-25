@@ -1,3 +1,5 @@
+import { title } from "process"
+
 type Project = {
     title: string
     description: string
@@ -15,11 +17,15 @@ export const NAVIGATION = [
     },
     {
         title: "Proyectos",
-        href: "/proyectos"
+        href: "/#proyectos"
+    },
+    {
+        title: "Tecnologías",
+        href: "/#tecnologias"
     },
     {
         title: "Sobre mí",
-        href: "/sobre-mi"
+        href: "/#sobre-mi"
     }, 
     {
         title: "Contacto",
