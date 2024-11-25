@@ -29,13 +29,23 @@ export const NAVIGATION = [
 
 export const PROJECTS: Project[] = [
     {
-        title: "Place of amazing portfolios",
+        title: "HKanime",
         description:
-            "Are you looking for inspiration for your portfolio? You're in the right place! Here you will find a collection of amazing portfolios by amazing people.",
-        href: "https://list.swajp.me",
-        github: "https://github.com/swajp/list-swajp.me",
-        image: "/projects/list-project.png",
-        tags: ["Next.js", "Tailwind CSS"],
+            "HKanime es una aplicación tipo streaming de animes donde podrás ver tus animes favoritos y hablar con otoros usuarios.",
+        href: "https://hkanimes.vercel.app",
+        github: "https://github.com/JCruzMi/hkanime",
+        image: "/project-hk.jpg",
+        tags: ["Vue.js", "Tailwind CSS"],
+        featured: true
+    }, 
+    {
+        title: "Uwallet",
+        description:
+            "Uwallet es una aplicación para el manejo de tus finanzas personales, centralizando tarjetas de crédito y debito. Así como realizar transferencias, retiros y pagos.",
+        href: "https://uwallet.vercel.app",
+        github: "https://github.com/JCruzMi/uwallet",
+        image: "/project-uwallet.jpg",
+        tags: ["Next.js", "Tailwind CSS", "TypeScript", "Shadcn/ui"],
         featured: true
     }
 ]

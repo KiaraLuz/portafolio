@@ -2,9 +2,6 @@ import { SOCIALS } from "@/config/index";
 import Link from "next/link";
 
 export default function Footer() {
-  const getYear = () => {
-    return new Date().getFullYear();
-  };
   return (
     <footer className="z-100">
       <div className="border-t border-border py-4">
