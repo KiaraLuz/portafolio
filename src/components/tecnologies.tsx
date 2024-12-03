@@ -1,7 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Badge } from "./ui/badge";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { TECH_STACK } from "@/config";
+import Image from "next/image";
 
 export default function Tecnologies() {
   return (
@@ -10,88 +12,36 @@ export default function Tecnologies() {
         Tecnologías
       </h2>
       <div className="flex flex-col gap-4">
-        <Card>
-          <CardHeader>
-            <CardTitle>Frontend</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="flex flex-wrap gap-2">
-              <li>
-                <Badge>HTML</Badge>
-              </li>
-              <li>
-                <Badge>CSS</Badge>
-              </li>
-              <li>
-                <Badge>JavaScript</Badge>
-              </li>
-              <li>
-                <Badge>TypeScript</Badge>
-              </li>
-              <li>
-                <Badge>React</Badge>
-              </li>
-              <li>
-                <Badge>Next.js</Badge>
-              </li>
-              <li>
-                <Badge>Vue.js</Badge>
-              </li>
-              <li>
-                <Badge>Bootstrap</Badge>
-              </li>
-              <li>
-                <Badge>Tailwind CSS</Badge>
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader>
-            <CardTitle>Backend</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="flex flex-wrap gap-2">
-              <li>
-                <Badge>Node JS</Badge>
-              </li>
-              <li>
-                <Badge>Express</Badge>
-              </li>
-              <li>
-                <Badge>MongoDB</Badge>
-              </li>
-              <li>
-                <Badge>MySQL</Badge>
-              </li>
-              <li>
-                <Badge>SQLserver</Badge>
-              </li>
-              <li>
-                <Badge>Python</Badge>
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader>
-            <CardTitle>Otros</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="flex flex-wrap gap-2">
-              <li>
-                <Badge>Git</Badge>
-              </li>
-              <li>
-                <Badge>GitHub</Badge>
-              </li>
-              <li>
-                <Badge>Figma</Badge>
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
+        {Object.entries(TECH_STACK).map(([category, tools]) => (
+          <Card key={category}>
+            <CardHeader>
+              <CardTitle>{category}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="flex flex-wrap gap-2">
+                {tools.map((tool) => (
+                  <li key={tool.title}>
+                    <HoverCard>
+                      <HoverCardTrigger>
+                        <Image
+                          src={tool.image}
+                          alt={tool.title}
+                          width={40}
+                          height={40}
+                        />
+                      </HoverCardTrigger>
+                      <HoverCardContent side="top">
+                        {tool.title}
+                      </HoverCardContent>
+                    </HoverCard>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+        ))}
       </div>
+
       <Link
         className="flex items-start"
         target="_blank"

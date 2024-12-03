@@ -20,7 +20,7 @@ export default function Introduction() {
         <Image
           className="w-3/4 max-w-[300px] rounded-full sm:w-[400px]"
           src="/perfil.jpg"
-          alt="kiara"
+          alt="Perfil de Kiara"
           width={500}
           height={500}
         />

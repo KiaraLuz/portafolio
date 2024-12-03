@@ -68,57 +68,31 @@ export const SOCIALS = [
 ]
 
 
-export const TECH_STACK = [
-    {
-        title: "Next.js",
-        href: "https://nextjs.org"
-    },
-    {
-        title: "React",
-        href: "https://reactjs.org"
-    },
-    {
-        title: "Git",
-        href: "https://git-scm.com"
-    },
-    {
-        title: "Figma",
-        href: "https://figma.com"
-    },
-    {
-        title: "MySQL",
-        href: "https://www.mysql.com"
-    },
-    {
-        title: "TypeScript",
-        href: "https://www.typescriptlang.org"
-    },
-    {
-        title: "Docker",
-        href: "https://www.docker.com"
-    },
-    {
-        title: "Tailwind CSS",
-        href: "https://tailwindcss.com"
-    },
-    {
-        title: "Framer Motion",
-        href: "https://www.framer.com/motion"
-    },
-    {
-        title: "MongoDB",
-        href: "https://www.mongodb.com"
-    },
-    {
-        title: "Wordpress",
-        href: "https://wordpress.org"
-    },
-    {
-        title: "Convex",
-        href: "https://convex.dev"
-    },
-    {
-        title: "shadcn/ui",
-        href: "https://ui.shadcn.com"
-    }
-]
+export const TECH_STACK = {
+    Frontend: [
+      { title: "HTML5", image: "/svgs/html5.svg" },
+      { title: "CSS3", image: "/svgs/css3.svg" },
+      { title: "JavaScript", image: "/svgs/javascript.svg" },
+      { title: "TypeScript", image: "/svgs/typescript.svg" },
+      { title: "ReactJS", image: "/svgs/react.svg" },
+      { title: "NextJS", image: "/svgs/nextjs.svg" },
+      { title: "VueJS", image: "/svgs/vuejs.svg" },
+      { title: "Bootstrap", image: "/svgs/bootstrap.svg" },
+      { title: "Tailwind CSS", image: "/svgs/tailwindcss.svg" },
+    ],
+    Backend: [
+      { title: "Node.js", image: "/svgs/nodejs.svg" },
+      { title: "Express", image: "/svgs/express.svg" },
+      { title: "MongoDB", image: "/svgs/mongodb.svg" },
+      { title: "MySQL", image: "/svgs/mysql.svg" },
+      { title: "SQLserver", image: "/svgs/sqlserver.svg" },
+      { title: "Python", image: "/svgs/python.svg" },
+    ],
+    Otros: [
+      { title: "Git", image: "/svgs/git.svg" },
+      { title: "GitHub", image: "/svgs/github.svg" },
+      { title: "Figma", image: "/svgs/figma.svg" },
+      { title: "WordPress", image: "/svgs/wordpress.svg" },
+    ]
+  };
+  
