@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section className="flex flex-col gap-4">
-      <h2 id="sobre-mi" className="text-4xl font-bold">
+      <h2 id="sobre-mi" className="scroll-mt-20 text-4xl font-bold">
         Sobre Mí
       </h2>
       <p className="text-base">

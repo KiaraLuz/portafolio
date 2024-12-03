@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Tecnologies() {
   return (
     <section className="flex flex-col gap-4">
-      <h2 id="tecnologias" className="text-4xl font-bold">
+      <h2 id="tecnologias" className="scroll-mt-20 text-4xl font-bold">
         Tecnologías
       </h2>
       <div className="flex flex-col gap-4">

@@ -13,7 +13,7 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <section className="flex flex-col gap-4">
-      <h2 id="proyectos" className="text-4xl font-bold">
+      <h2 id="proyectos" className="scroll-mt-20 text-4xl font-bold">
         Proyectos
       </h2>
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
