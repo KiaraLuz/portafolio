@@ -22,13 +22,15 @@ export default function Tecnologies() {
                 {tools.map((tool) => (
                   <li key={tool.title}>
                     <HoverCard>
-                      <HoverCardTrigger>
-                        <Image
-                          src={tool.image}
-                          alt={tool.title}
-                          width={40}
-                          height={40}
-                        />
+                      <HoverCardTrigger asChild>
+                        <div>
+                          <Image
+                            src={tool.image}
+                            alt={tool.title}
+                            width={40}
+                            height={40}
+                          />
+                        </div>
                       </HoverCardTrigger>
                       <HoverCardContent side="top">
                         {tool.title}
@@ -45,7 +47,7 @@ export default function Tecnologies() {
       <Link
         className="flex items-start"
         target="_blank"
-        href="https://drive.google.com/file/d/1Qyl7Z1ypVHCSEXyS0eXgZa9XcYob5dBp/view?usp=sharing"
+        href="https://drive.google.com/file/d/1ajmdUCi1fP-BMjImAAWOdGSGJWN94ggP/view?usp=sharing"
       >
         <Button>Descargar CV</Button>
       </Link>

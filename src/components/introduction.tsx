@@ -7,7 +7,7 @@ export default function Introduction() {
       <div className="mb-8 flex flex-col justify-center gap-4 p-0 sm:m-0 sm:py-8 sm:pr-8">
         <Image
           className="rounded-full"
-          src="/perfil.jpg"
+          src="/perfil.webp"
           alt="Perfil de Kiara"
           width={80}
           height={80}

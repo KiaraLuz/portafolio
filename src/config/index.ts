@@ -40,7 +40,7 @@ export const PROJECTS: Project[] = [
             "HKanime es una aplicación tipo streaming de animes donde podrás ver tus animes favoritos y hablar con otoros usuarios.",
         href: "https://hkanimes.vercel.app",
         github: "https://github.com/JCruzMi/hkanime",
-        image: "/project-hk.jpg",
+        image: "/project-hk.webp",
         tags: ["Vue.js", "Tailwind CSS"],
         featured: true
     }, 
@@ -50,7 +50,7 @@ export const PROJECTS: Project[] = [
             "Uwallet es una aplicación para el manejo de tus finanzas personales, centralizando tarjetas de crédito y debito. Así como realizar transferencias, retiros y pagos.",
         href: "https://uwallet.vercel.app",
         github: "https://github.com/JCruzMi/uwallet",
-        image: "/project-uwallet.jpg",
+        image: "/project-uwallet.webp",
         tags: ["Next.js", "Tailwind CSS", "TypeScript", "Shadcn/ui"],
         featured: true
     }
