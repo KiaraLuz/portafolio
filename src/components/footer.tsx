@@ -8,8 +8,8 @@ export default function Footer() {
         <div className="grid grid-cols-2">
           {SOCIALS.map((social) => (
             <Link
-              key={social.href}
-              href={social.href}
+              key={social.title}
+              href="https://www.linkedin.com/in/kiara-luz-fernandez-perez-a182a226b/"
               target="_blank"
               className="text-muted-foreground transition-colors hover:text-foreground"
             >

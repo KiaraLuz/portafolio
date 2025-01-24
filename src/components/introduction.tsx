@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Introduction() {
   return (
@@ -19,8 +20,15 @@ export default function Introduction() {
           aportar valor a proyectos digitales.
         </p>
         <div className="flex gap-4">
-          <Button>Envíame un correo</Button>
-          <Button>Linkedin</Button>
+          <Link href="mailto:fernandezperezkiara@gmail.com" target="_blank">
+            <Button>Envíame un mensaje</Button>
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/kiara-luz-fernandez-perez-a182a226b/"
+            target="_blank"
+          >
+            <Button>Linkedin</Button>
+          </Link>
         </div>
       </div>
       <div className="flex items-center justify-center"></div>

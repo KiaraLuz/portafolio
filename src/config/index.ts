@@ -29,7 +29,7 @@ export const NAVIGATION = [
     }, 
     {
         title: "Contacto",
-        href: "/contacto"
+        href: "mailto:fernandezperezkiara@gmail.com"
     }
 ]
 
