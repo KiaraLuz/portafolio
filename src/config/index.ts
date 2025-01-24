@@ -96,3 +96,9 @@ export const TECH_STACK = {
     ]
   };
   
+export const LINKS = {
+    linkedin: "https://www.linkedin.com/in/kiara-luz-fernandez-perez-a182a226b/",
+    github: "https://github.com/KiaraLuz",
+    email: "mailto:fernandezperezkiara@gmail.com",
+    drive: "https://drive.google.com/file/d/1ajmdUCi1fP-BMjImAAWOdGSGJWN94ggP/view?usp=sharing"
+}

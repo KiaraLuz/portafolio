@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { LINKS } from "@/config";
 
 export default function Introduction() {
   return (
@@ -23,10 +24,7 @@ export default function Introduction() {
           <Link href="mailto:fernandezperezkiara@gmail.com" target="_blank">
             <Button>Envíame un mensaje</Button>
           </Link>
-          <Link
-            href="https://www.linkedin.com/in/kiara-luz-fernandez-perez-a182a226b/"
-            target="_blank"
-          >
+          <Link href={LINKS.linkedin} target="_blank">
             <Button>Linkedin</Button>
           </Link>
         </div>

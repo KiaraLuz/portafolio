@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { TECH_STACK } from "@/config";
+import { TECH_STACK, LINKS } from "@/config";
 import Image from "next/image";
 
 export default function Tecnologies() {
@@ -44,11 +44,7 @@ export default function Tecnologies() {
         ))}
       </div>
 
-      <Link
-        className="flex items-start"
-        target="_blank"
-        href="https://drive.google.com/file/d/1ajmdUCi1fP-BMjImAAWOdGSGJWN94ggP/view?usp=sharing"
-      >
+      <Link className="flex items-start" target="_blank" href={LINKS.drive}>
         <Button>Descargar CV</Button>
       </Link>
     </section>

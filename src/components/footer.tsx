@@ -9,7 +9,7 @@ export default function Footer() {
           {SOCIALS.map((social) => (
             <Link
               key={social.title}
-              href="https://www.linkedin.com/in/kiara-luz-fernandez-perez-a182a226b/"
+              href={social.href}
               target="_blank"
               className="text-muted-foreground transition-colors hover:text-foreground"
             >
