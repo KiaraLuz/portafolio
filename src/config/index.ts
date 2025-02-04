@@ -53,6 +53,26 @@ export const PROJECTS: Project[] = [
         image: "/project-uwallet.webp",
         tags: ["Next.js", "Tailwind CSS", "TypeScript", "Shadcn/ui"],
         featured: true
+    },
+    {
+        title: "Valorant",
+        description:
+            "Aplicación donde se muestran los agentes de Valorant y sus habilidades. Creado con fines educativos.",
+        href: "https://app.netlify.com/sites/agents-valorant/",
+        github: "https://github.com/KiaraLuz/valorant",
+        image: "/project-valorant.webp",
+        tags: ["React.js", "Tailwind CSS", "TypeScript", "Swiper.js"],
+        featured: true
+    },
+    {
+        title: "Animaciones con CSS y Tailwind",
+        description:
+            "Aplicación donde se muestran distintas animaciones con código en CSS y Tailwind. Se muestra el código en un editor simple, listo para copiar.",
+        href: "https://animaciones-tailwind-css.netlify.app/",
+        github: "https://github.com/KiaraLuz/Animations",
+        image: "/project-animaciones.webp",
+        tags: ["Vue.js", "Tailwind CSS", "Simple Code Editor"],
+        featured: true
     }
 ]
 
