@@ -29,6 +29,16 @@ export default function Tecnologies() {
                             alt={tool.title}
                             width={40}
                             height={40}
+                            className={
+                              [
+                                "/svgs/nextjs.svg",
+                                "/svgs/express.svg",
+                                "/svgs/sqlserver.svg",
+                                "/svgs/github.svg",
+                              ].includes(tool.image)
+                                ? "invert-light"
+                                : ""
+                            }
                           />
                         </div>
                       </HoverCardTrigger>

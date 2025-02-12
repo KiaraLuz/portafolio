@@ -1,10 +1,11 @@
 import { NAVIGATION } from "@/config";
 import Link from "next/link";
+import ToogleTheme from "./toogleTheme";
 
 export default function Navbar() {
   return (
-    <header className="md:w-[calc(100%-4rem] sticky top-0 z-50 flex h-16 w-full items-center justify-center border-b border-border bg-zinc-900 px-20">
-      <nav className="w-full flex-col items-center justify-center md:flex md:flex-row">
+    <header className="md:w-[calc(100%-4rem] sticky top-0 z-50 flex h-16 w-full items-center justify-center border-b border-border bg-background px-20">
+      <nav className="w-full flex-col items-center justify-center gap-4 md:flex md:flex-row">
         <div className="flex gap-8">
           {NAVIGATION.map((item) => (
             <Link
@@ -16,6 +17,7 @@ export default function Navbar() {
             </Link>
           ))}
         </div>
+        <ToogleTheme />
       </nav>
     </header>
   );

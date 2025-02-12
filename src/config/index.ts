@@ -114,7 +114,7 @@ export const TECH_STACK = {
       { title: "Figma", image: "/svgs/figma.svg" },
       { title: "WordPress", image: "/svgs/wordpress.svg" },
     ]
-  };
+};
   
 export const LINKS = {
     linkedin: "https://www.linkedin.com/in/kiara-luz-fernandez-perez-a182a226b/",

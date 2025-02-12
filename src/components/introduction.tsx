@@ -16,7 +16,7 @@ export default function Introduction() {
         />
         <h1 className="text-4xl font-bold sm:text-5xl">Hola, soy Kiara</h1>
         <p className="mt-4 max-w-lg text-base sm:text-lg lg:text-xl">
-          Soy <strong className="text-blue-300">frontend developer</strong> con
+          Soy <strong className="text-accent">frontend developer</strong> con
           interés en adquirir experiencia laboral y seguir aprendiendo para
           aportar valor a proyectos digitales.
         </p>
