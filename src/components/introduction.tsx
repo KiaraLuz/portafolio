@@ -1,11 +1,18 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import Link from "next/link";
 import { LINKS } from "@/config";
 
 export default function Introduction() {
   return (
-    <div className="flex max-h-screen flex-col items-center justify-between pt-10 sm:flex-row">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="flex max-h-screen flex-col items-center justify-between pt-10 sm:flex-row"
+    >
       <div className="mb-8 flex flex-col justify-center gap-4 p-0 sm:m-0 sm:py-8 sm:pr-8">
         <div>
           <span className="rounded-full bg-accent/50 px-3 py-2 text-sm font-light text-foreground">
@@ -28,6 +35,6 @@ export default function Introduction() {
         </div>
       </div>
       <div className="flex items-center justify-center"></div>
-    </div>
+    </motion.div>
   );
 }

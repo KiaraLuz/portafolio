@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { Badge } from "./ui/badge";
 import {
@@ -9,10 +11,16 @@ import {
 } from "./ui/card";
 import { PROJECTS } from "@/config";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
-    <section className="flex flex-col gap-4">
+    <motion.section
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
+      className="flex flex-col gap-4"
+    >
       <h2 id="proyectos" className="scroll-mt-20 text-4xl font-bold">
         Proyectos
       </h2>
@@ -67,6 +75,6 @@ export default function Projects() {
           </Card>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

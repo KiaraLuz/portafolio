@@ -5,6 +5,7 @@ import { NAVIGATION } from "@/config";
 import Link from "next/link";
 import ToogleTheme from "./toogleTheme";
 import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,13 +21,20 @@ export default function Navbar() {
 
       <nav className="hidden flex-1 justify-center gap-8 md:flex">
         {NAVIGATION.map((item) => (
-          <Link
+          <motion.div
             key={item.href}
-            href={item.href}
-            className="text-muted-foreground transition-colors hover:text-foreground"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
           >
-            {item.title}
-          </Link>
+            <Link
+              key={item.href}
+              href={item.href}
+              className="text-muted-foreground transition-colors hover:text-foreground"
+            >
+              {item.title}
+            </Link>
+          </motion.div>
         ))}
       </nav>
 
@@ -34,20 +42,35 @@ export default function Navbar() {
         <ToogleTheme />
       </div>
 
-      {isOpen && (
-        <div className="items-left absolute left-0 top-16 flex h-screen w-full flex-col gap-6 bg-background px-10 py-10 md:hidden">
-          {NAVIGATION.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="animate-fade-in-left -translate-x-5 text-2xl text-muted-foreground opacity-0 transition-colors hover:text-foreground"
-              onClick={() => setIsOpen(false)}
-            >
-              {item.title}
-            </Link>
-          ))}
-        </div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ x: "-100%", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: "-100%", opacity: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="absolute left-0 top-16 flex h-screen w-full flex-col gap-6 bg-background px-10 py-10 md:hidden"
+          >
+            {NAVIGATION.map((item, index) => (
+              <motion.div
+                key={item.href}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+              >
+                <Link
+                  href={item.href}
+                  className="text-2xl text-muted-foreground transition-colors hover:text-foreground"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.title}
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
