@@ -4,6 +4,7 @@ import { useState } from "react";
 import { NAVIGATION } from "@/config";
 import Link from "next/link";
 import ToogleTheme from "./toogleTheme";
+import ToogleLanguage from "./toogleLanguage";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -38,8 +39,9 @@ export default function Navbar() {
         ))}
       </nav>
 
-      <div className="ml-auto">
+      <div className="ml-auto flex gap-4">
         <ToogleTheme />
+        <ToogleLanguage />
       </div>
 
       <AnimatePresence>

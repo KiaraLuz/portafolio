@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { LINKS } from "@/config";
+import { useTranslations } from "next-intl";
 
 export default function Introduction() {
+  const t = useTranslations("introduction");
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -16,7 +18,7 @@ export default function Introduction() {
       <div className="mb-8 flex flex-col justify-center gap-4 p-0 sm:m-0 sm:py-8 sm:pr-8">
         <div>
           <span className="rounded-full bg-accent/50 px-3 py-2 text-sm font-light text-foreground">
-            Lista para trabajar
+            {t("available")}
           </span>
         </div>
         <h1 className="text-4xl font-bold sm:text-5xl">Hola, soy Kiara</h1>
