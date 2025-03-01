@@ -30,7 +30,7 @@ export default function Projects() {
         {PROJECTS.map((project) => (
           <Card className="group h-full" key={project.title}>
             <div className="p-4">
-              <Link href={project.href}>
+              <Link href={project.href} target="_blank">
                 <div className="overflow-hidden rounded-lg">
                   <Image
                     alt={project.title}
@@ -47,7 +47,7 @@ export default function Projects() {
               <CardTitle>
                 <div className="flex items-center gap-2">
                   <Link href={project.href} target="_blank">
-                    {project.title}
+                    {t(`${project.title.toLowerCase()}.title`)}
                   </Link>
                   {project.github && (
                     <Link
@@ -65,7 +65,9 @@ export default function Projects() {
                   )}
                 </div>
               </CardTitle>
-              <CardDescription>{project.description}</CardDescription>
+              <CardDescription>
+                {t(`${project.title.toLowerCase()}.description`)}
+              </CardDescription>
             </CardHeader>
             <CardFooter className="flex flex-wrap *:mb-2 *:mr-2">
               {project.tags.map((tag) => (

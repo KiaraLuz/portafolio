@@ -7,42 +7,40 @@ type Project = {
     github?: string
     image: string
     tags: string[]
-    featured?: boolean
 }
 
 export const NAVIGATION = [
     {
-        title: "Inicio",
+        title: "home",
         href: "/"
     },
     {
-        title: "Proyectos",
+        title: "projects",
         href: "/#proyectos"
     },
     {
-        title: "Tecnologías",
+        title: "tecnologies",
         href: "/#tecnologias"
     },
     {
-        title: "Sobre mí",
+        title: "about",
         href: "/#sobre-mi"
     }, 
     {
-        title: "Contacto",
+        title: "contact",
         href: "mailto:fernandezperezkiara@gmail.com"
     }
 ]
 
 export const PROJECTS: Project[] = [
     {
-        title: "HKanime",
+        title: "HKAnime",
         description:
-            "HKanime es una aplicación tipo streaming de animes donde podrás ver tus animes favoritos y hablar con otoros usuarios.",
+            "HKanime es una aplicación tipo streaming de animes donde podrás ver tus animes favoritos y hablar con otros usuarios.",
         href: "https://hkanimes.vercel.app",
         github: "https://github.com/JCruzMi/hkanime",
         image: "/project-hk.webp",
         tags: ["Vue.js", "Tailwind CSS"],
-        featured: true
     }, 
     {
         title: "Uwallet",
@@ -52,7 +50,6 @@ export const PROJECTS: Project[] = [
         github: "https://github.com/JCruzMi/uwallet",
         image: "/project-uwallet.webp",
         tags: ["Next.js", "Tailwind CSS", "TypeScript", "Shadcn/ui"],
-        featured: true
     },
     {
         title: "Valorant",
@@ -62,17 +59,15 @@ export const PROJECTS: Project[] = [
         github: "https://github.com/KiaraLuz/valorant",
         image: "/project-valorant.webp",
         tags: ["React.js", "Tailwind CSS", "TypeScript", "Swiper.js"],
-        featured: true
     },
     {
-        title: "Animaciones con CSS y Tailwind",
+        title: "Animaciones",
         description:
             "Aplicación donde se muestran distintas animaciones con código en CSS y Tailwind. Se muestra el código en un editor simple, listo para copiar.",
         href: "https://animaciones-tailwind-css.netlify.app/",
         github: "https://github.com/KiaraLuz/Animations",
         image: "/project-animaciones.webp",
         tags: ["Vue.js", "Tailwind CSS", "Simple Code Editor"],
-        featured: true
     }
 ]
 

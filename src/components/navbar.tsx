@@ -7,9 +7,11 @@ import ToogleTheme from "./toogleTheme";
 import ToogleLanguage from "./toogleLanguage";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations("navbar");
 
   return (
     <header className="sticky top-0 z-50 flex h-16 w-full items-center border-b border-border bg-background px-6 md:px-20">
@@ -33,7 +35,7 @@ export default function Navbar() {
               href={item.href}
               className="text-muted-foreground transition-colors hover:text-foreground"
             >
-              {item.title}
+              {t(item.title)}
             </Link>
           </motion.div>
         ))}

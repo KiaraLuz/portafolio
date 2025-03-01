@@ -9,7 +9,23 @@
         "linkedin": "Linkedin"
     },
     "projects": {
-        "title": "Proyectos"
+        "title": "Proyectos",
+        "hkanime": {
+            "title": "HKanime",
+            "description": "HKanime es una aplicación tipo streaming de animes donde podrás ver tus animes favoritos y hablar con otros usuarios."
+        },
+        "uwallet": {
+            "title": "Uwallet",
+            "description": "Uwallet es una aplicación para el manejo de tus finanzas personales, centralizando tarjetas de crédito y debito. Así como realizar transferencias, retiros y pagos."
+        },
+        "valorant": {
+            "title": "Valorant",
+            "description": "Aplicación donde se muestran los agentes de Valorant y sus habilidades. Creado con fines educativos."
+        },
+        "animaciones": {
+            "title": "Animaciones con CSS y Tailwind",
+            "description": "Aplicación donde se muestran distintas animaciones con código en CSS y Tailwind. Se muestra el código en un editor simple, listo para copiar."
+        }
     },
     "tecnologies": {
         "title": "Tecnologías",
