@@ -1,10 +1,30 @@
 {
     "introduction": {
         "available": "Disponible para trabajar",
+        "hola": "Hola, soy Kiara",
         "soy": "Soy",
         "frontend": "Desarrolladora Frontend",
         "interes": "con interés en adquirir experiencia laboral y seguir aprendiendo para aportar valor a proyectos digitales.",
         "email": "Envíame un mensaje",
         "linkedin": "Linkedin"
+    },
+    "projects": {
+        "title": "Proyectos"
+    },
+    "tecnologies": {
+        "title": "Tecnologías",
+        "download": "Descargar CV"
+    },
+    "about": {
+        "title": "Sobre Mí",
+        "developer": "Desarrolladora Frontend",
+        "description": "Soy Kiara, desarrolladora frontend con experiencia en la creación de interfaces dinámicas, optimizadas y accesibles. Actualmente, estudio el"
+    },
+    "navbar": {
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "tecnologies": "Tecnologías",
+        "about": "Sobre Mí",
+        "contact": "Contacto"
     }
 }

@@ -12,8 +12,10 @@ import {
 import { PROJECTS } from "@/config";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Projects() {
+  const t = useTranslations("projects");
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -22,7 +24,7 @@ export default function Projects() {
       className="flex flex-col gap-4"
     >
       <h2 id="proyectos" className="scroll-mt-20 text-4xl font-bold">
-        Proyectos
+        {t("title")}
       </h2>
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
         {PROJECTS.map((project) => (

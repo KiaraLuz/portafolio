@@ -39,7 +39,7 @@ export default function Navbar() {
         ))}
       </nav>
 
-      <div className="ml-auto flex gap-4">
+      <div className="ml-auto flex items-center gap-4">
         <ToogleTheme />
         <ToogleLanguage />
       </div>

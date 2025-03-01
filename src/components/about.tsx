@@ -11,8 +11,10 @@ import {
 } from "./ui/card";
 import Link from "next/link";
 import { Badge } from "./ui/badge";
+import { useTranslations } from "next-intl";
 
 export default function About() {
+  const t = useTranslations("about");
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -21,7 +23,7 @@ export default function About() {
       className="flex flex-col gap-4"
     >
       <h2 id="sobre-mi" className="scroll-mt-20 text-4xl font-bold">
-        Sobre Mí
+        {t("title")}
       </h2>
       <Card className="flex flex-col gap-4 p-4 md:flex-row">
         <div className="flex min-w-[300px] items-center justify-center overflow-hidden rounded-lg md:w-auto">
@@ -56,9 +58,9 @@ export default function About() {
             </CardTitle>
             <CardDescription className="flex flex-col gap-2">
               <p className="text-base leading-relaxed">
-                Soy <span className="font-semibold">Kiara</span>, desarrolladora
-                frontend con experiencia en la creación de interfaces dinámicas,
-                optimizadas y accesibles. Actualmente, estudio el{" "}
+                Soy Kiara, desarrolladora frontend con experiencia en la
+                creación de interfaces dinámicas, optimizadas y accesibles.
+                Actualmente, estudio el{" "}
                 <span className="text-secondary-foreground">9no ciclo</span> de
                 <span className="text-secondary-foreground">
                   {" "}

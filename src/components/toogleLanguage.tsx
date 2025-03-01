@@ -1,25 +1,20 @@
-"use client";
+import { useState } from "react";
 
-import { usePathname, useRouter } from "next/navigation";
-
-const locales = ["en", "es"];
-
-export default function LanguageSwitcher() {
-  const router = useRouter();
-  const pathname = usePathname();
-
-  const changeLanguage = (locale: string) => {
-    const newPath = `/${locale}${pathname.substring(3)}`; // Asumiendo que el idioma está en la URL ("/en/...")
-    router.push(newPath);
-  };
+export default function FlagToggle() {
+  const [isEnglish, setIsEnglish] = useState(true);
 
   return (
-    <div>
-      {locales.map((locale) => (
-        <button key={locale} onClick={() => changeLanguage(locale)}>
-          {locale.toUpperCase()}
-        </button>
-      ))}
+    <div className="flex items-center space-x-4">
+      <button
+        onClick={() => setIsEnglish(!isEnglish)}
+        className="rounded-lg p-2"
+      >
+        {isEnglish ? (
+          <img src="/svgs/flag-spain.svg" alt="Spain Flag" className="w-6" />
+        ) : (
+          <img src="/svgs/flag-us.svg" alt="UK Flag" className="w-6" />
+        )}
+      </button>
     </div>
   );
 }

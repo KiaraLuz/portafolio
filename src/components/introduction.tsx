@@ -21,15 +21,15 @@ export default function Introduction() {
             {t("available")}
           </span>
         </div>
-        <h1 className="text-4xl font-bold sm:text-5xl">Hola, soy Kiara</h1>
+        <h1 className="text-4xl font-bold sm:text-5xl">{t("hola")}</h1>
         <p className="max-w-lg text-base sm:text-lg lg:text-xl">
-          Soy <strong className="text-accent">frontend developer</strong> con
-          interés en adquirir experiencia laboral y seguir aprendiendo para
-          aportar valor a proyectos digitales.
+          {t("soy")}
+          <strong className="text-accent"> {t("frontend")}</strong>{" "}
+          {t("interes")}
         </p>
         <div className="flex gap-4">
           <Link href="mailto:fernandezperezkiara@gmail.com" target="_blank">
-            <Button>Envíame un mensaje</Button>
+            <Button>{t("email")}</Button>
           </Link>
           <Link href={LINKS.linkedin} target="_blank">
             <Button>Linkedin</Button>

@@ -7,8 +7,10 @@ import { Button } from "./ui/button";
 import { TECH_STACK, LINKS } from "@/config";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Tecnologies() {
+  const t = useTranslations("tecnologies");
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -17,7 +19,7 @@ export default function Tecnologies() {
       className="flex flex-col gap-4"
     >
       <h2 id="tecnologias" className="scroll-mt-20 text-4xl font-bold">
-        Tecnologías
+        {t("title")}
       </h2>
       <div className="flex flex-col gap-4">
         {Object.entries(TECH_STACK).map(([category, tools]) => (
@@ -63,7 +65,7 @@ export default function Tecnologies() {
       </div>
 
       <Link className="flex items-start" target="_blank" href={LINKS.drive}>
-        <Button>Descargar CV</Button>
+        <Button>{t("download")}</Button>
       </Link>
     </motion.section>
   );
