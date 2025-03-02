@@ -58,44 +58,23 @@ export default function About() {
             </CardTitle>
             <CardDescription className="flex flex-col gap-2">
               <p className="text-base leading-relaxed">
-                Soy Kiara, desarrolladora frontend con experiencia en la
-                creación de interfaces dinámicas, optimizadas y accesibles.
-                Actualmente, estudio el{" "}
-                <span className="text-secondary-foreground">9no ciclo</span> de
-                <span className="text-secondary-foreground">
-                  {" "}
-                  Ingeniería de Sistemas
-                </span>{" "}
-                en la
-                <span className="text-secondary-foreground">
-                  {" "}
-                  Universidad Nacional Federico Villarreal
-                </span>
-                .
+                {t("text1")}{" "}
+                <span className="text-secondary-foreground">{t("text2")}</span>{" "}
+                {t("text3")}{" "}
+                <span className="text-secondary-foreground">{t("text4")}</span>{" "}
+                {t("text5")}{" "}
+                <span className="text-secondary-foreground">{t("text6")}</span>
               </p>
-              <p className="text-base leading-relaxed">
-                Me especializo en el desarrollo web, asegurando que las
-                aplicaciones sean eficientes y fáciles de usar. He trabajado en
-                proyectos aplicando metodologías ágiles y siempre busco mejorar
-                mis habilidades y asumir nuevos retos.
-              </p>
-              <p className="text-base leading-relaxed">
-                También me interesa el diseño UX/UI y la optimización de
-                rendimiento en el frontend. En mi tiempo libre, disfruto de los
-                videojuegos y explorar nuevas tecnologías.
-              </p>
+              <p className="text-base leading-relaxed">{t("text7")}</p>
+              <p className="text-base leading-relaxed">{t("text8")}</p>
             </CardDescription>
           </CardHeader>
           <CardFooter className="flex flex-wrap gap-2 p-0">
-            <Badge variant="secondary">
-              Estudiante de Ingeniería de Sistemas
-            </Badge>
-            <Badge variant="secondary">Apasionada por la tecnología</Badge>
-            <Badge variant="secondary">Autodidacta</Badge>
-            <Badge variant="secondary">
-              En búsqueda de nuevas oportunidades
-            </Badge>
-            <Badge variant="secondary">Amante de los videojuegos</Badge>
+            {t.raw("badges").map((badge: string, index: number) => (
+              <Badge key={index} variant="secondary">
+                {badge}
+              </Badge>
+            ))}
           </CardFooter>
         </div>
       </Card>

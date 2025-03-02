@@ -25,7 +25,7 @@ export default function Tecnologies() {
         {Object.entries(TECH_STACK).map(([category, tools]) => (
           <Card key={category}>
             <CardHeader>
-              <CardTitle>{category}</CardTitle>
+              <CardTitle>{t(`techStack.${category.toLowerCase()}`)}</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="flex flex-wrap gap-2">

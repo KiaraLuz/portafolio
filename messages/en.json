@@ -29,12 +29,31 @@
     },
     "tecnologies": {
         "title": "Tecnologies",
-        "download": "Download CV"
+        "download": "Download CV",
+        "techStack": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "otros": "Others"
+        }
     },
     "about": {
-        "title": "About me",
+        "title": "About Me",
         "developer": "Desarrolladora Frontend",
-        "description": "Soy Kiara, desarrolladora frontend con experiencia en la creación de interfaces dinámicas, optimizadas y accesibles. Actualmente, estudio el"
+        "text1": "I'm Kiara, a frontend developer with experience in creating dynamic, optimized, and accessible interfaces. I am currently studying the",
+        "text2": "9th semester",
+        "text3": "of",
+        "text4": "Systems Engineering",
+        "text5": "at the",
+        "text6": "Federico Villarreal National University.",
+        "text7": "I specialize in web development, ensuring that applications are efficient and easy to use. I have worked on projects using agile methodologies and always seek to improve my skills and take on new challenges.",
+        "text8": "I am also interested in UX/UI design and frontend performance optimization. In my free time, I enjoy video games and exploring new technologies.",
+        "badges": [
+            "Systems Engineering Student",
+            "Passionate about technology",
+            "Self-taught",
+            "Seeking new opportunities",
+            "Video game lover"
+        ]
     },
     "navbar": {
         "home": "Home",

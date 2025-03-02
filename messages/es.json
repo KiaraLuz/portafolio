@@ -29,12 +29,31 @@
     },
     "tecnologies": {
         "title": "Tecnologías",
-        "download": "Descargar CV"
+        "download": "Descargar CV",
+        "techStack": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "otros": "Otros"
+        }
     },
     "about": {
         "title": "Sobre Mí",
         "developer": "Desarrolladora Frontend",
-        "description": "Soy Kiara, desarrolladora frontend con experiencia en la creación de interfaces dinámicas, optimizadas y accesibles. Actualmente, estudio el"
+        "text1": "Soy Kiara, desarrolladora frontend con experiencia en la creación de interfaces dinámicas, optimizadas y accesibles. Actualmente, estudio el",
+        "text2": "9no ciclo",
+        "text3": "de",
+        "text4": "Ingeniería de Sistemas",
+        "text5": "en la",
+        "text6": "Universidad Nacional Federico Villarreal.",
+        "text7": "Me especializo en el desarrollo web, asegurando que las aplicaciones sean eficientes y fáciles de usar. He trabajado en proyectos aplicando metodologías ágiles y siempre busco mejorar mis habilidades y asumir nuevos retos.",
+        "text8": "También me interesa el diseño UX/UI y la optimización de rendimiento en el frontend. En mi tiempo libre, disfruto de los videojuegos y explorar nuevas tecnologías.",
+        "badges": [
+            "Estudiante de Ingeniería de Sistemas",
+            "Apasionada por la tecnología",
+            "Autodidacta",
+            "En búsqueda de nuevas oportunidades",
+            "Amante de los videojuegos"
+        ]
     },
     "navbar": {
         "home": "Inicio",
