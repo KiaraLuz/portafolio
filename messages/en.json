@@ -25,6 +25,14 @@
         "animaciones": {
             "title": "Animations with CSS and Tailwind",
             "description": "Application where different animations are shown with code in CSS and Tailwind. The code is shown in a simple editor, ready to copy."
+        },
+        "speedcode": {
+            "title": "SpeedCode",
+            "description": "Application that compares the execution times of different code cases."
+        },
+        "tinderclone": {
+            "title": "Tinder Clone",
+            "description": "Tinder clone with Next.js, Pinia and Tailwind CSS that allows you to explore profiles, swipe cards and perform interactions like Like, Dislike and Super Like."
         }
     },
     "tecnologies": {

@@ -68,6 +68,24 @@ export const PROJECTS: Project[] = [
         github: "https://github.com/KiaraLuz/Animations",
         image: "/project-animaciones.webp",
         tags: ["Vue.js", "Tailwind CSS", "Simple Code Editor"],
+    },
+    {
+        title: "SpeedCode",
+        description:
+        "Aplicación que compara los tiempos de ejecución de diferentes casos de código.",
+        href: "https://speed-code.vercel.app/",
+        github: "https://github.com/JCruzMi/speed-code",
+        image: "/project-speedcode.webp",
+        tags: ["Vue.js", "Tailwind CSS", "TypeScript"],
+    },
+    {
+        title: "TinderClone",
+        description:
+        "Aplicación de Tinder clonada con Next.js, Pinia y Tailwind CSS que permite explorar perfiles, deslizar tarjetas y realizar interacciones Like, Dislike y Super Like.",
+        href: "https://github.com/JCruzMi/tinder",
+        github: "https://github.com/JCruzMi/tinder",
+        image: "/project-tinder.webp",
+        tags: ["Next.js", "Pinia", "Tailwind CSS"],
     }
 ]
 
